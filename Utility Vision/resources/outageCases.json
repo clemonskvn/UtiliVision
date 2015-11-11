@@ -1,0 +1,12 @@
+[
+{"caseNumber": 100001,"level": "L","startTime": "7:40","customersImpacted": 1,"status": "Closed","estTimeRestore": "7:59"},
+{"caseNumber": 100002,"level": "L","startTime": "7:42","customersImpacted": 1,"status": "Closed","estTimeRestore": "8:22"},
+{"caseNumber": 100003,"level": "L","startTime": "7:47","customersImpacted": 1,"status": "In Progress","estTimeRestore": "8:27"},
+{"caseNumber": 100004,"level": "L","startTime": "7:52","customersImpacted": 1,"status": "Open","estTimeRestore": "8:32"},
+{"caseNumber": 100005,"level": "L","startTime": "7:57","customersImpacted": 1,"status": "Open","estTimeRestore": "8:47"},
+{"caseNumber": 100006,"level": "L","startTime": "7:59","customersImpacted": 1,"status": "Open","estTimeRestore": "8:49"},
+{"caseNumber": 100007,"level": "F","startTime": "8:01","customersImpacted": 204,"status": "Acknowledged","estTimeRestore": "8:31"},
+{"caseNumber": 100008,"level": "F","startTime": "8:02","customersImpacted": 119,"status": "Open","estTimeRestore": "8:32"},
+{"caseNumber": 100009,"level": "C","startTime": "8:02","customersImpacted": 1598,"status": "In Route","estTimeRestore": "8:32"},
+{"caseNumber": 100010,"level": "T","startTime": "8:04","customersImpacted": 12,"status": "Open","estTimeRestore": "8:44"}
+]

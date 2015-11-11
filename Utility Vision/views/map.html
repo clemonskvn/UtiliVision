@@ -1,0 +1,27 @@
+<div id="mapCont" class="container">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Outage Map</div>
+            <div class="panel-body">
+                <div id="map" style="height: 30em;">
+                    <p>GOOGLE MAP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var map;
+    function initMap() {
+    // Create a map object and specify the DOM element for display.
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 29.731020, lng: -95.466170},
+            scrollwheel: false,
+            zoom: 8
+        });
+    }
+</script>
+
+<!-- Google Maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEQ80ESOW-EMZekeGobf6kfLVxW8FdW2A&callback=initMap"></script>

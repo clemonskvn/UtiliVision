@@ -1,0 +1,21 @@
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <p class="navbar-text pull-left">© 2015 - Site Built By <a href="http://utegration.com/index.html">Utegration</a></p>
+        </div>
+        <div id="marquee-container" class="col-lg-6 col-md-6 col-sm-6">
+            <marquee id="footerTopMarquee" behavior="scroll" direction="left" scrollamount="10">
+                MDMS Last Update: {{ status.mdmsLastPullTS }} | AMS Last Update: {{ status.amsLastPullTS }} |
+                OMS Last Update: {{ status.omsLastPullTS }} | Mobile Last Update: {{ status.mobileLastPullTS }} |
+                System Messages: {{ status.systemEmergencyMsg }}
+            </marquee>
+            <marquee id="footerBotMarquee" behavior="scroll" direction="left" scrollamount="10">This is the bottom marquee</marquee>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <a href="https://www.facebook.com/utegration"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/utegration"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/117870675934707549024/videos"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:helpdesk@utegration.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div id="outageDetail" class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Outage Details: <input id="caseNumInput" type="text" ng-model="caseNum" ng-model-options="{ debounce: 250 }" style="color: black; width: 100px; text-align: right; padding-right: 5px;">
+        </div>
+        <div class="panel-body" ng-repeat="x in cases | filter:caseNum">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="row">
+                        <label for="outageCase" class="control-label col-xs-3">Outage Case</label>
+                        <div class="col-xs-4">
+                            <label id="outageCaseNum" class="form-control">{{ x.caseNumber }}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="troubleLevel" class="control-label col-xs-3">Trouble Level</label>
+                        <div class="col-xs-4">
+                            <label id="outageTroubleLevel" class="form-control">{{ x.level | decodeLevel }}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="startTime" class="control-label col-xs-3">Start Time</label>
+                        <div class="col-xs-4">
+                            <label id="outageStartTime" class="form-control">{{ x.startTime }}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="customersImpacted" class="control-label col-xs-3">Customers Impacted</label>
+                        <div class="col-xs-4">
+                            <label id="outageCustomersImpacted" class="form-control">{{ x.customersImpacted }}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="status" class="control-label col-xs-3">Status</label>
+                        <div class="col-xs-4">
+                            <label id="outageStatus" class="form-control">{{ x.status }}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="estTimeRestore" class="control-label col-xs-3">Estimated Time of Restore</label>
+                        <div class="col-xs-4">
+                            <label id="outageEstTimeRestore" class="form-control">{{ x.estTimeRestore }}</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

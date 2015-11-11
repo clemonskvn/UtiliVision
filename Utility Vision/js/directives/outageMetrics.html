@@ -1,0 +1,44 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Outage Metrics for <strong>{{ metrics.report_date | date }}</strong></div>
+    <div id = "outageMetricsPanelBody" class="panel-body">
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">SAIDI:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.SAIDI | number }}</div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">CAIDI:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.CAIDI | number }}</div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">SAIFI:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.SAIFI | number }}</div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">CAIFI:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.CAIFI | number }}</div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">Opened:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.outage_cases_opened | number }}</div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">Cust Out:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.customers_impacted | number }}</div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">Mins Out:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.mins_out | number : 0 }}</div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 metrics-box">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">CELID:</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right">{{ metrics.CELID | number : 0 }}</div>
+        </div>
+    </div>
+</div>

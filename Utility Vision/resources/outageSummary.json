@@ -1,0 +1,12 @@
+{
+    "report_date": "2015-10-28",
+    "SAIDI": 1.1254,
+    "mtdSAIDI": 10.1058,
+    "CAIDI": 1.2259,
+    "SAIFI": 1,
+    "CAIFI": 1,
+    "CELID": 1,
+    "outage_cases_opened": 48,
+    "customers_impacted": 1024,
+    "mins_out": 1152.41
+}
